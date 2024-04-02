@@ -12,28 +12,17 @@ from selenium.webdriver.support import expected_conditions as EC
 import pyperclip
 import time
 
-def pu_login_module(driver_manager, logger, number, id, pw):
+def trex_login_module(driver_manager, logger, id, pw):
     try:
         driver = driver_manager.get_driver()
-        login_url = "https://dealer.parts-unlimited.com/login"
-        #number = F30477
-        #id = JKIM
-        #pw = piston7759!!!
+        login_url = "https://www.t-rex-racing.com/login.asp"
         if driver is None:
             return False
         
         if driver.current_url is not login_url:
             driver_manager.get_page(login_url)
 
-        number_input = driver.find_element(By.NAME, "dealerCode").send_keys(number)
-        # number_input.click()
-        # pyperclip.copy(number)
-        # actions = ActionChains(driver)
-        # actions.key_down(Keys.CONTROL).send_keys('v').key_up(Keys.CONTROL).perform()
-        Util.wait_time(logger, 2)
-        driver.get_screenshot_as_file("number_input.png")
-            
-        id_input = driver.find_element(By.NAME, "username").send_keys(id)
+        id_input = driver.find_element(By.NAME, "email").send_keys(id)
         # id_input.click()
         # pyperclip.copy(id)
         # actions = ActionChains(driver)
@@ -49,7 +38,7 @@ def pu_login_module(driver_manager, logger, number, id, pw):
         Util.wait_time(logger, 2)
         driver.get_screenshot_as_file("pw_input.png")
 
-        driver.find_element(By.CLASS_NAME, "btn.btn-secondary").click()
+        driver.find_element(By.ID, "btnSubmit").click()
         Util.wait_time(logger, 5)
         
         if driver.current_url == login_url:

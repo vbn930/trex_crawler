@@ -5,6 +5,7 @@ from Utility import Util
 import undetected_chromedriver as uc 
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
@@ -19,9 +20,10 @@ import psutil
 from PIL import Image
 
 class WebDriverManager:
-    def __init__(self, logger, is_headless=False):
+    def __init__(self, logger, is_headless=False, is_use_udc=False):
         self.logger = logger
         self.is_headless = is_headless
+        self.is_use_udc = is_use_udc
         self.logger.log(log_level="Debug", log_msg="Driver init")
         self.driver = None
         self.open_driver()
@@ -34,17 +36,29 @@ class WebDriverManager:
 
 
     def open_driver(self):
-        options = uc.ChromeOptions() 
-        options.headless = False  # Set headless to False to run in non-headless mode
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument("--disable-notifications")
-        driver = uc.Chrome(use_subprocess=True, options=options) 
-        #driver.maximize_window()
-        if self.is_headless == True: 
-            driver.minimize_window()
-    
-        self.driver = driver
-        self.driver.set_page_load_timeout(10)
+        if self.is_use_udc:
+            options = uc.ChromeOptions() 
+            options.headless = False  # Set headless to False to run in non-headless mode
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument("--disable-notifications")
+            driver = uc.Chrome(use_subprocess=True, options=options) 
+            if self.is_headless == True: 
+                driver.minimize_window()
+        
+            self.driver = driver
+            self.driver.set_page_load_timeout(10)
+        else:
+            chrome_options = Options()
+            user_agent = "Mozilla/5.0 (Linux; Android 9; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.83 Mobile Safari/537.36"
+            chrome_options.add_argument('user-agent=' + user_agent)
+            chrome_options.add_argument('--disable-dev-shm-usage')
+            chrome_options.add_argument("--disable-notifications")
+            chrome_options.add_argument("--disable-blink-features=AnimationControlled")
+            chrome_options.add_argument('--start-maximized')
+            if self.is_headless:
+                chrome_options.add_argument("headless")
+            driver = webdriver.Chrome(options=chrome_options)
+            self.driver = driver
     
     def close_driver(self):
         if self.driver != None:

@@ -1,17 +1,17 @@
 from Manager import DriverManager
 from Utility import LoginModule
 from Utility import Util
-import pu_crawler
 import atexit
+import trex_crawler
 
 #pyinstaller -n "TREX Crawler" --clean --onefile main.py
 
 def main():
     logger = Util.Logger("Dev")
-    test_url = "https://iofferman.x.yupoo.com/categories/190905?isSubCate=true&page=2"
+    crawler = trex_crawler.TREX_Crawler(logger)
+    test_url = "https://www.t-rex-racing.com/"
     try:
-        driver_manager = DriverManager.WebDriverManager(logger)
-        driver_manager.get_page(test_url)
+        crawler.start_crawling()
     except Exception as e:
         logger.log(log_level="Error", log_msg=e)
     finally:
