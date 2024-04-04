@@ -4,14 +4,15 @@ from Utility import Util
 import atexit
 import trex_crawler
 
-#pyinstaller -n "TREX Crawler" --clean --onefile main.py
+#pyinstaller -n "TREX Crawler ver1.0" --clean --onefile main.py
 
 def main():
-    logger = Util.Logger("Dev")
+    logger = Util.Logger("Build")
     crawler = trex_crawler.TREX_Crawler(logger)
-    test_url = "https://www.t-rex-racing.com/"
+    logger.log(log_level="Event", log_msg=f"=TREX Crawler ver1.0=")
     try:
         crawler.start_crawling()
+        return
     except Exception as e:
         logger.log(log_level="Error", log_msg=e)
     finally:

@@ -55,9 +55,11 @@ class WebDriverManager:
             chrome_options.add_argument("--disable-notifications")
             chrome_options.add_argument("--disable-blink-features=AnimationControlled")
             chrome_options.add_argument('--start-maximized')
+            chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
             if self.is_headless:
                 chrome_options.add_argument("headless")
             driver = webdriver.Chrome(options=chrome_options)
+            driver.minimize_window()
             self.driver = driver
     
     def close_driver(self):
@@ -81,18 +83,19 @@ class WebDriverManager:
 
     def get_page(self, url, max_wait_time = 10):
         is_page_loaded = False
+        self.driver.minimize_window()
         while(is_page_loaded == False):
             try:
                 self.driver.get(url)
+                Util.wait_time(self.logger, 5)
                 self.driver.implicitly_wait(max_wait_time)
                 self.logger.log(log_level="Debug", log_msg=f"Get *{url}* page")
                 self.driver.get_screenshot_as_file("temp.png")
                 is_page_loaded = True
-            except:
-                self.logger.log(log_level="Debug", log_msg=f"Page load failed")
+            except Exception as e:
+                self.logger.log(log_level="Debug", log_msg=f"Page load failed : {e}")
                 is_page_loaded = False
-            if self.is_headless == True: 
-                self.driver.minimize_window()
+            self.driver.minimize_window()
 
     def get_driver(self):
         return self.driver
@@ -110,14 +113,14 @@ class WebDriverManager:
         min_size = 50
         
         #만약 다운로드 시도횟수가 5번을 넘는다면 다운로드 불가능한 이미지로 간주
-        if download_cnt > 5:
+        if download_cnt > 10:
             self.logger.log(log_level="Error", log_msg=f"Img size is under {min_size}KB or cannot download image \'{img_name}\'")
             return
         r = requests.get(img_url,headers={'User-Agent': 'Mozilla/5.0'})
-        with open(f"{img_path}/{img_name}.png", "wb") as outfile:
+        with open(f"{img_path}/{img_name}.jpg", "wb") as outfile:
             outfile.write(r.content)
         #KB 단위의 이미지 사이즈
-        img_size = os.path.getsize(f"{img_path}/{img_name}.png") / 1024
+        img_size = os.path.getsize(f"{img_path}/{img_name}.jpg") / 1024
 
         #만약 이미지 크기가 일정 크기 이하라면 다운로드가 실패한것으로 간주, 다시 다운로드
         if img_size < min_size:

@@ -1,11 +1,24 @@
 import time
 from datetime import datetime
 from googletrans import Translator
+import sys
 
-def translator(src, dst, trans_str):
-    translator = Translator(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64)')
-    result_str = translator.translate(text=trans_str, src=src, dest=dst).text
-    time.sleep(2)
+def translator(logger, src, dst, trans_str):
+    result_str = ""
+    is_translated = False
+    error_cnt = 0
+    while(not is_translated):
+        if error_cnt > 5:
+            logger.log(log_level="Error", log_msg=f"Failed to translate product description and shutdown the program")
+            sys.exit()
+        try:
+            translator = Translator(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64)')
+            result_str = translator.translate(text=trans_str, src=src, dest=dst).text
+            time.sleep(2)
+            is_translated = True
+        except Exception as e:
+            error_cnt += 1
+            logger.log(log_level="Error", log_msg=f"Failed to translate product description : {e}")
     return result_str
 
 def wait_time(logger, wait_time):

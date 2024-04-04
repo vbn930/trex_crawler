@@ -1,8 +1,0 @@
-[2024-04-03 01:06:51][Debug] Driver init
-[2024-04-03 01:06:54][Debug] Get *https://www.t-rex-racing.com/login.asp* page
-[2024-04-03 01:06:54][Debug] Wait 2 secs
-[2024-04-03 01:06:57][Debug] Wait 2 secs
-[2024-04-03 01:07:00][Debug] Wait 5 secs
-[2024-04-03 01:07:05][Event] Login succes!
-[2024-04-03 01:07:06][Debug] Get *https://www.t-rex-racing.com/* page
-[2024-04-03 01:07:09][Error] name 'shop_categories' is not defined
