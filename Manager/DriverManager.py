@@ -91,10 +91,12 @@ class WebDriverManager:
                 self.driver.get(url)
                 self.driver.implicitly_wait(max_wait_time)
                 self.logger.log(log_level="Debug", log_msg=f"Get *{url}* page")
+                self.driver.get_screenshot_as_file("temp.png")
                 is_page_loaded = True
             except Exception as e:
                 self.logger.log(log_level="Debug", log_msg=f"Page load failed : {e}")
                 is_page_loaded = False
+            self.driver.minimize_window()
 
     def get_driver(self):
         return self.driver

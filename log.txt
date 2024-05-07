@@ -1,15 +1,703 @@
-[2024-05-08 01:27:54][Debug] Driver init
-[2024-05-08 01:27:56][Event] =TREX Crawler ver1.2=
-[2024-05-08 01:27:56][Event] Current settings 'ID : bikeonline.korea@gmail.com, PW : piston7759!, Start maker : BMW, Start model : K1600GT, K1600GTL, Start year : 2011 - On'
-[2024-05-08 01:27:58][Debug] Get *https://www.t-rex-racing.com/login.asp* page
-[2024-05-08 01:27:58][Debug] Wait 2 secs
-[2024-05-08 01:28:00][Debug] Wait 2 secs
-[2024-05-08 01:28:04][Debug] Wait 5 secs
-[2024-05-08 01:28:09][Event] Login succes!
-[2024-05-08 01:28:11][Debug] Get *https://www.t-rex-racing.com/* page
-[2024-05-08 01:28:16][Event] Start point found! : BMW, K1600GT, K1600GTL, 2011 - On
-[2024-05-08 01:28:44][Event] Current maker : BMW, model : K1600GT, K1600GTL, year : 2011 - On
-[2024-05-08 01:28:47][Debug] Get *https://www.t-rex-racing.com/category-s/1392.htm?searching=Y&sort=13&cat=1392&show=300&page=1* page
-[2024-05-08 01:28:48][Debug] Get *https://www.t-rex-racing.com/category-s/1392.htm?searching=Y&sort=13&cat=1392&show=300&page=1* page
-[2024-05-08 01:29:03][Debug] Get *https://www.t-rex-racing.com/2011-2022-BMW-K1600B-GT-GTL-Front-Axle-Sliders-p/n139-11f.htm* page
-[2024-05-08 01:29:03][Error] Error in get_item_info : string index out of range
+[2024-05-08 02:48:01][Debug] Driver init
+[2024-05-08 02:48:02][Event] =TREX Crawler ver1.2=
+[2024-05-08 02:48:02][Event] Current settings 'ID : bikeonline.korea@gmail.com, PW : piston7759!, Start maker : 0, Start model : 0, Start year : 0'
+[2024-05-08 02:48:04][Debug] Get *https://www.t-rex-racing.com/login.asp* page
+[2024-05-08 02:48:05][Debug] Wait 2 secs
+[2024-05-08 02:48:07][Debug] Wait 2 secs
+[2024-05-08 02:48:14][Debug] Wait 5 secs
+[2024-05-08 02:48:19][Event] Login succes!
+[2024-05-08 02:48:20][Debug] Get *https://www.t-rex-racing.com/* page
+[2024-05-08 02:48:54][Event] Current maker : Aprilia, model : Caponord 1200, year : 2008 - 2019
+[2024-05-08 02:48:56][Debug] Get *https://www.t-rex-racing.com/category-s/1763.htm?searching=Y&sort=13&cat=1763&show=300&page=1* page
+[2024-05-08 02:48:58][Debug] Get *https://www.t-rex-racing.com/category-s/1763.htm?searching=Y&sort=13&cat=1763&show=300&page=1* page
+[2024-05-08 02:49:10][Debug] Get *https://www.t-rex-racing.com/Aprilia-Front-Axle-Sliders-p/n80f.htm* page
+[2024-05-08 02:49:11][Debug] Image 'tx_N80F_1' download completed
+[2024-05-08 02:49:11][Debug] Image 'tx_N80F_2' download completed
+[2024-05-08 02:49:11][Debug] Image 'tx_N80F_3' download completed
+[2024-05-08 02:49:12][Debug] Image 'tx_N80F_4' download completed
+[2024-05-08 02:49:12][Debug] Image 'tx_N80F_5' download completed
+[2024-05-08 02:49:12][Debug] Image 'tx_N80F_6' download completed
+[2024-05-08 02:49:12][Debug] Image 'tx_N80F_7' download completed
+[2024-05-08 02:49:12][Debug] Image 'tx_N80F_8' download completed
+[2024-05-08 02:49:12][Debug] Image 'tx_N80F_9' download completed
+[2024-05-08 02:49:25][Event] Product 'Aprilia Caponord / Dorsoduro / Mana / RSV1000 / RSV4 / Shiver / Tuono Front Axle Sliders' information crawling completed
+[2024-05-08 02:49:30][Debug] Get *https://www.t-rex-racing.com/Husqvarna-Aprilia-KTM-Rear-Axle-sliders-p/n90-12rearaxlesliders.htm* page
+[2024-05-08 02:49:30][Debug] Image 'tx_N90-12RearAxleSliders_1' download completed
+[2024-05-08 02:49:31][Debug] Image 'tx_N90-12RearAxleSliders_2' download completed
+[2024-05-08 02:49:32][Debug] Image 'tx_N90-12RearAxleSliders_3' download completed
+[2024-05-08 02:49:32][Debug] Image 'tx_N90-12RearAxleSliders_4' download completed
+[2024-05-08 02:49:32][Debug] Image 'tx_N90-12RearAxleSliders_5' download completed
+[2024-05-08 02:49:32][Debug] Image 'tx_N90-12RearAxleSliders_6' download completed
+[2024-05-08 02:49:32][Debug] Image 'tx_N90-12RearAxleSliders_7' download completed
+[2024-05-08 02:49:32][Debug] Image 'tx_N90-12RearAxleSliders_8' download completed
+[2024-05-08 02:49:32][Debug] Image 'tx_N90-12RearAxleSliders_9' download completed
+[2024-05-08 02:49:33][Debug] Image 'tx_N90-12RearAxleSliders_10' download completed
+[2024-05-08 02:49:33][Debug] Image 'tx_N90-12RearAxleSliders_11' download completed
+[2024-05-08 02:49:33][Debug] Image 'tx_N90-12RearAxleSliders_12' download completed
+[2024-05-08 02:49:45][Event] Product 'Husqvarna Norden 901, KTM 790 / 890 / 1190 / 1290, Aprilia RSV4 / Tuono / Caponord / Dorsoduro / Mana / Shiver Rear Axle Sliders' information crawling completed
+[2024-05-08 02:49:48][Debug] Get *https://www.t-rex-racing.com/2008-2019-Aprilia-Caponord-1200-Sliders-Pucks-p/n92-18-1200replacementpucks.htm* page
+[2024-05-08 02:49:48][Debug] Image 'tx_N92-18-1200ReplacementPucks_1' download completed
+[2024-05-08 02:50:01][Event] Product '2008 - 2019 Aprilia Caponord 1200 Frame Slider Replacement Puck(s)' information crawling completed
+[2024-05-08 02:50:06][Debug] Get *https://www.t-rex-racing.com/Caponord-1200-Dorsoduro-Shiver-750-Frame-sliders-p/n92-8.htm* page
+[2024-05-08 02:50:06][Debug] Image 'tx_N92-8_1' download completed
+[2024-05-08 02:50:06][Debug] Image 'tx_N92-8_2' download completed
+[2024-05-08 02:50:06][Debug] Image 'tx_N92-8_3' download completed
+[2024-05-08 02:50:29][Event] Product 'Aprilia Caponord 1200 / Dorsoduro 750 / Shiver 750 No Cut Frame Sliders' information crawling completed
+[2024-05-08 02:50:31][Debug] Get *https://www.t-rex-racing.com/Caponord-dorsoduro-shiver-750-combo-p/n92-8combo.htm* page
+[2024-05-08 02:50:32][Debug] Image 'tx_N92-8+N80F+BLAPLASpool6_1' download completed
+[2024-05-08 02:50:32][Debug] Image 'tx_N92-8+N80F+BLAPLASpool6_2' download completed
+[2024-05-08 02:50:33][Debug] Image 'tx_N92-8+N80F+BLAPLASpool6_3' download completed
+[2024-05-08 02:50:55][Event] Product '2008 - 2016 Aprilia Caponord 1200 / Dorsoduro 750 / Shiver 750 No Cut Frame Front Axle Sliders Spools' information crawling completed
+[2024-05-08 02:50:57][Debug] Get *https://www.t-rex-racing.com/2018-Dorsoduro-Shiver-900-750-Caponord-1200-Covers-p/n92-18c.htm* page
+[2024-05-08 02:50:57][Debug] Image 'tx_N92-18C_1' download completed
+[2024-05-08 02:50:57][Debug] Image 'tx_N92-18C_2' download completed
+[2024-05-08 02:50:58][Debug] Image 'tx_N92-18C_3' download completed
+[2024-05-08 02:50:58][Debug] Image 'tx_N92-18C_4' download completed
+[2024-05-08 02:50:58][Debug] Image 'tx_N92-18C_5' download completed
+[2024-05-08 02:51:20][Event] Product 'Dorsoduro 900 Shiver 900 / Dorsoduro 750 Shiver 750 / Caponord 1200 Engine Case Covers' information crawling completed
+[2024-05-08 02:51:22][Debug] Get *https://www.t-rex-racing.com/2008-2019-Aprilia-Caponord-1200-Frame-Sliders-p/n92-18-1200.htm* page
+[2024-05-08 02:51:33][Debug] Image 'tx_N92-18-1200_1' download completed
+[2024-05-08 02:51:55][Event] Product '2008 - 2019 Aprilia Caponord 1200 No Cut Frame Sliders' information crawling completed
+[2024-05-08 02:51:58][Debug] Get *https://www.t-rex-racing.com/Aprilia-Caponord-1200-Combo-p/n92-18-1200combo.htm* page
+[2024-05-08 02:52:08][Debug] Image 'tx_N92-18-1200+N92-18C+N90-12R+N80F_1' download completed
+[2024-05-08 02:52:31][Event] Product '2013 - 2019 Aprilia Caponord 1200 Frame Sliders, Axle Sliders, Case Covers' information crawling completed
+[2024-05-08 02:52:31][Event] Current maker : Aprilia, model : Dorsoduro 750, year : 2008 - 2020
+[2024-05-08 02:52:33][Debug] Get *https://www.t-rex-racing.com/category-s/951.htm?searching=Y&sort=13&cat=951.&show=300&page=1* page
+[2024-05-08 02:52:35][Debug] Get *https://www.t-rex-racing.com/category-s/951.htm?searching=Y&sort=13&cat=951.&show=300&page=1* page
+[2024-05-08 02:52:47][Debug] Get *https://www.t-rex-racing.com/Aprilia-Front-Axle-Sliders-p/n80f.htm* page
+[2024-05-08 02:52:48][Debug] Image 'tx_N80F_1' download completed
+[2024-05-08 02:52:48][Debug] Image 'tx_N80F_2' download completed
+[2024-05-08 02:52:48][Debug] Image 'tx_N80F_3' download completed
+[2024-05-08 02:52:49][Debug] Image 'tx_N80F_4' download completed
+[2024-05-08 02:52:49][Debug] Image 'tx_N80F_5' download completed
+[2024-05-08 02:52:49][Debug] Image 'tx_N80F_6' download completed
+[2024-05-08 02:52:49][Debug] Image 'tx_N80F_7' download completed
+[2024-05-08 02:52:49][Debug] Image 'tx_N80F_8' download completed
+[2024-05-08 02:52:49][Debug] Image 'tx_N80F_9' download completed
+[2024-05-08 02:53:02][Event] Product 'Aprilia Caponord / Dorsoduro / Mana / RSV1000 / RSV4 / Shiver / Tuono Front Axle Sliders' information crawling completed
+[2024-05-08 02:53:07][Debug] Get *https://www.t-rex-racing.com/Husqvarna-Aprilia-KTM-Rear-Axle-sliders-p/n90-12rearaxlesliders.htm* page
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_1' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_2' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_3' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_4' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_5' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_6' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_7' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_8' download completed
+[2024-05-08 02:53:08][Debug] Image 'tx_N90-12RearAxleSliders_9' download completed
+[2024-05-08 02:53:09][Debug] Image 'tx_N90-12RearAxleSliders_10' download completed
+[2024-05-08 02:53:09][Debug] Image 'tx_N90-12RearAxleSliders_11' download completed
+[2024-05-08 02:53:09][Debug] Image 'tx_N90-12RearAxleSliders_12' download completed
+[2024-05-08 02:53:21][Event] Product 'Husqvarna Norden 901, KTM 790 / 890 / 1190 / 1290, Aprilia RSV4 / Tuono / Caponord / Dorsoduro / Mana / Shiver Rear Axle Sliders' information crawling completed
+[2024-05-08 02:53:23][Debug] Get *https://www.t-rex-racing.com/2008-2017-Dorsoduro-750-Shiver-750-Frame-Sliders-p/n92-18-750replacementpucks.htm* page
+[2024-05-08 02:53:24][Debug] Image 'tx_N92-18-750ReplacementPucks_1' download completed
+[2024-05-08 02:53:37][Event] Product '2008 - 2017 Aprilia Dorsoduro 750 / Shiver 750 Frame Slider Replacement Puck(s)' information crawling completed
+[2024-05-08 02:53:42][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 02:53:52][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 02:54:14][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 02:54:16][Debug] Get *https://www.t-rex-racing.com/Caponord-1200-Dorsoduro-Shiver-750-Frame-sliders-p/n92-8.htm* page
+[2024-05-08 02:54:16][Debug] Image 'tx_N92-8_1' download completed
+[2024-05-08 02:54:17][Debug] Image 'tx_N92-8_2' download completed
+[2024-05-08 02:54:17][Debug] Image 'tx_N92-8_3' download completed
+[2024-05-08 02:54:39][Event] Product 'Aprilia Caponord 1200 / Dorsoduro 750 / Shiver 750 No Cut Frame Sliders' information crawling completed
+[2024-05-08 02:54:41][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-750-900-Lowering-Link-p/ll92-18.htm* page
+[2024-05-08 02:54:52][Debug] Image 'tx_LL92-18_1' download completed
+[2024-05-08 02:55:15][Event] Product 'Aprilia Dorsoduro 750 / Dorsoduro 900 Lowering Link' information crawling completed
+[2024-05-08 02:55:18][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-900-750-Fender-Eliminator-p/n92-18fe.htm* page
+[2024-05-08 02:55:19][Debug] Image 'tx_N92-18FE_1' download completed
+[2024-05-08 02:55:19][Debug] Image 'tx_N92-18FE_2' download completed
+[2024-05-08 02:55:20][Debug] Image 'tx_N92-18FE_3' download completed
+[2024-05-08 02:55:20][Debug] Image 'tx_N92-18FE_4' download completed
+[2024-05-08 02:55:20][Debug] Image 'tx_N92-18FE_5' download completed
+[2024-05-08 02:55:21][Debug] Image 'tx_N92-18FE_6' download completed
+[2024-05-08 02:55:44][Event] Product 'Aprilia Dorsoduro 750 / 900 Fender Eliminator Tail Tidy' information crawling completed
+[2024-05-08 02:55:47][Debug] Get *https://www.t-rex-racing.com/Caponord-dorsoduro-shiver-750-combo-p/n92-8combo.htm* page
+[2024-05-08 02:55:48][Debug] Image 'tx_N92-8+N80F+BLAPLASpool6_1' download completed
+[2024-05-08 02:55:48][Debug] Image 'tx_N92-8+N80F+BLAPLASpool6_2' download completed
+[2024-05-08 02:55:48][Debug] Image 'tx_N92-8+N80F+BLAPLASpool6_3' download completed
+[2024-05-08 02:56:10][Event] Product '2008 - 2016 Aprilia Caponord 1200 / Dorsoduro 750 / Shiver 750 No Cut Frame Front Axle Sliders Spools' information crawling completed
+[2024-05-08 02:56:13][Debug] Get *https://www.t-rex-racing.com/Aprilia-Dorsoduro-750-900-Adjustable-Kickstand-p/ks92-18.htm* page
+[2024-05-08 02:56:23][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 02:56:24][Error] Img size is under 50KB or cannot download image 'tx_KS92-18_1'
+[2024-05-08 02:56:48][Event] Product 'Aprilia Dorsoduro 750 / Dorsoduro 900 Adjustable Kickstand' information crawling completed
+[2024-05-08 02:56:50][Debug] Get *https://www.t-rex-racing.com/2008-2012-Dorsoduro-Shiver-750-Case-covers-p/n92-8c.htm* page
+[2024-05-08 02:56:51][Debug] Image 'tx_N92-8C_1' download completed
+[2024-05-08 02:56:51][Debug] Image 'tx_N92-8C_2' download completed
+[2024-05-08 02:56:51][Debug] Image 'tx_N92-8C_3' download completed
+[2024-05-08 02:56:52][Debug] Image 'tx_N92-8C_4' download completed
+[2024-05-08 02:56:52][Debug] Image 'tx_N92-8C_5' download completed
+[2024-05-08 02:57:16][Event] Product '2008 - 2012 Dorsoduro 750 / Shiver 750 Engine Case Covers' information crawling completed
+[2024-05-08 02:57:18][Debug] Get *https://www.t-rex-racing.com/2018-Dorsoduro-Shiver-900-750-Caponord-1200-Covers-p/n92-18c.htm* page
+[2024-05-08 02:57:18][Debug] Image 'tx_N92-18C_1' download completed
+[2024-05-08 02:57:18][Debug] Image 'tx_N92-18C_2' download completed
+[2024-05-08 02:57:18][Debug] Image 'tx_N92-18C_3' download completed
+[2024-05-08 02:57:18][Debug] Image 'tx_N92-18C_4' download completed
+[2024-05-08 02:57:18][Debug] Image 'tx_N92-18C_5' download completed
+[2024-05-08 02:57:41][Event] Product 'Dorsoduro 900 Shiver 900 / Dorsoduro 750 Shiver 750 / Caponord 1200 Engine Case Covers' information crawling completed
+[2024-05-08 02:57:45][Debug] Get *https://www.t-rex-racing.com/2008-2017-Dorsoduro-750-Shiver-750-Frame-Sliders-p/n92-18-750.htm* page
+[2024-05-08 02:57:56][Debug] Image 'tx_N92-18-750_1' download completed
+[2024-05-08 02:58:19][Event] Product '2008 - 2017 Aprilia Dorsoduro 750 / Shiver 750 No Cut Frame Sliders' information crawling completed
+[2024-05-08 02:58:23][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 02:58:24][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 02:58:24][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 02:58:24][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 02:58:24][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 02:58:24][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 02:58:24][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 02:58:24][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 02:58:25][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 02:58:25][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 02:58:25][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 02:58:25][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 02:58:25][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 02:58:48][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 02:58:49][Debug] Get *https://www.t-rex-racing.com/Aprilia-Dorsoduro-750-900-Kickstand-Lowering-Link-p/ks92-18combo.htm* page
+[2024-05-08 02:59:00][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:00][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:00][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:00][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 02:59:01][Error] Img size is under 50KB or cannot download image 'tx_KS92-18+LL92-18_1'
+[2024-05-08 02:59:24][Event] Product 'Aprilia Dorsoduro 750 / Dorsoduro 900 Adjustable Kickstand Lowering Link' information crawling completed
+[2024-05-08 02:59:28][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-Shiver-750-Combo2-p/n92-18-750combo2.htm* page
+[2024-05-08 02:59:28][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_1' download completed
+[2024-05-08 02:59:29][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_2' download completed
+[2024-05-08 02:59:29][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_3' download completed
+[2024-05-08 02:59:30][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_4' download completed
+[2024-05-08 02:59:30][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_5' download completed
+[2024-05-08 02:59:30][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_6' download completed
+[2024-05-08 02:59:31][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_7' download completed
+[2024-05-08 02:59:32][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_8' download completed
+[2024-05-08 02:59:32][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_9' download completed
+[2024-05-08 02:59:32][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_10' download completed
+[2024-05-08 02:59:32][Debug] Image 'tx_N92-18-750+N92-18C+N92-18FE+N90-12R+N80F_11' download completed
+[2024-05-08 02:59:55][Event] Product '2008 - 2017 Aprilia Dorsoduro 750 Frame Sliders, Axle Sliders, Case Covers, and Fender Eliminator' information crawling completed
+[2024-05-08 02:59:55][Event] Current maker : Aprilia, model : Dorsoduro 900, year : 2017 - 2020
+[2024-05-08 03:00:00][Debug] Get *https://www.t-rex-racing.com/category-s/953.htm?searching=Y&sort=13&cat=953.&show=300&page=1* page
+[2024-05-08 03:00:02][Debug] Get *https://www.t-rex-racing.com/category-s/953.htm?searching=Y&sort=13&cat=953.&show=300&page=1* page
+[2024-05-08 03:00:16][Debug] Get *https://www.t-rex-racing.com/Husqvarna-Aprilia-KTM-Rear-Axle-sliders-p/n90-12rearaxlesliders.htm* page
+[2024-05-08 03:00:16][Debug] Image 'tx_N90-12RearAxleSliders_1' download completed
+[2024-05-08 03:00:16][Debug] Image 'tx_N90-12RearAxleSliders_2' download completed
+[2024-05-08 03:00:16][Debug] Image 'tx_N90-12RearAxleSliders_3' download completed
+[2024-05-08 03:00:16][Debug] Image 'tx_N90-12RearAxleSliders_4' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_5' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_6' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_7' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_8' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_9' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_10' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_11' download completed
+[2024-05-08 03:00:17][Debug] Image 'tx_N90-12RearAxleSliders_12' download completed
+[2024-05-08 03:00:30][Event] Product 'Husqvarna Norden 901, KTM 790 / 890 / 1190 / 1290, Aprilia RSV4 / Tuono / Caponord / Dorsoduro / Mana / Shiver Rear Axle Sliders' information crawling completed
+[2024-05-08 03:00:32][Debug] Get *https://www.t-rex-racing.com/Aprilia-Dorsoduro-Shiver-900-Frame-Slider-Pucks-p/n92-18-900replacementpucks.htm* page
+[2024-05-08 03:00:33][Debug] Image 'tx_N92-18-900ReplacementPucks_1' download completed
+[2024-05-08 03:00:47][Event] Product 'Aprilia Dorsoduro 900 / Shiver 900 Frame Slider Replacement Puck(s)' information crawling completed
+[2024-05-08 03:00:49][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:00:59][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:01:22][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:01:24][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-750-900-Lowering-Link-p/ll92-18.htm* page
+[2024-05-08 03:01:34][Debug] Image 'tx_LL92-18_1' download completed
+[2024-05-08 03:01:57][Event] Product 'Aprilia Dorsoduro 750 / Dorsoduro 900 Lowering Link' information crawling completed
+[2024-05-08 03:01:58][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-900-750-Fender-Eliminator-p/n92-18fe.htm* page
+[2024-05-08 03:01:59][Debug] Image 'tx_N92-18FE_1' download completed
+[2024-05-08 03:01:59][Debug] Image 'tx_N92-18FE_2' download completed
+[2024-05-08 03:01:59][Debug] Image 'tx_N92-18FE_3' download completed
+[2024-05-08 03:01:59][Debug] Image 'tx_N92-18FE_4' download completed
+[2024-05-08 03:02:00][Debug] Image 'tx_N92-18FE_5' download completed
+[2024-05-08 03:02:00][Debug] Image 'tx_N92-18FE_6' download completed
+[2024-05-08 03:02:23][Event] Product 'Aprilia Dorsoduro 750 / 900 Fender Eliminator Tail Tidy' information crawling completed
+[2024-05-08 03:02:25][Debug] Get *https://www.t-rex-racing.com/Aprilia-Dorsoduro-750-900-Adjustable-Kickstand-p/ks92-18.htm* page
+[2024-05-08 03:02:35][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Debug] Image 'tx_KS92-18_1' download failed
+[2024-05-08 03:02:36][Error] Img size is under 50KB or cannot download image 'tx_KS92-18_1'
+[2024-05-08 03:02:59][Event] Product 'Aprilia Dorsoduro 750 / Dorsoduro 900 Adjustable Kickstand' information crawling completed
+[2024-05-08 03:03:01][Debug] Get *https://www.t-rex-racing.com/Aprilia-Dorsoduro-Shiver-900-No-Cut-Frame-Sliders-p/n92-18-900.htm* page
+[2024-05-08 03:03:02][Debug] Image 'tx_N92-18-900_1' download completed
+[2024-05-08 03:03:03][Debug] Image 'tx_N92-18-900_2' download completed
+[2024-05-08 03:03:03][Debug] Image 'tx_N92-18-900_3' download completed
+[2024-05-08 03:03:03][Debug] Image 'tx_N92-18-900_4' download completed
+[2024-05-08 03:03:04][Debug] Image 'tx_N92-18-900_5' download completed
+[2024-05-08 03:03:27][Event] Product 'Aprilia Dorsoduro 900 / Shiver 900 No Cut Frame Sliders' information crawling completed
+[2024-05-08 03:03:29][Debug] Get *https://www.t-rex-racing.com/2018-Dorsoduro-Shiver-900-750-Caponord-1200-Covers-p/n92-18c.htm* page
+[2024-05-08 03:03:29][Debug] Image 'tx_N92-18C_1' download completed
+[2024-05-08 03:03:29][Debug] Image 'tx_N92-18C_2' download completed
+[2024-05-08 03:03:29][Debug] Image 'tx_N92-18C_3' download completed
+[2024-05-08 03:03:29][Debug] Image 'tx_N92-18C_4' download completed
+[2024-05-08 03:03:29][Debug] Image 'tx_N92-18C_5' download completed
+[2024-05-08 03:03:52][Event] Product 'Dorsoduro 900 Shiver 900 / Dorsoduro 750 Shiver 750 / Caponord 1200 Engine Case Covers' information crawling completed
+[2024-05-08 03:03:53][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:03:54][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:03:54][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:03:54][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:03:54][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:03:54][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:03:54][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:03:54][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:03:55][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:03:55][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:03:55][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:03:55][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:03:55][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:04:17][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:04:19][Debug] Get *https://www.t-rex-racing.com/Aprilia-Dorsoduro-750-900-Kickstand-Lowering-Link-p/ks92-18combo.htm* page
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Debug] Image 'tx_KS92-18+LL92-18_1' download failed
+[2024-05-08 03:04:30][Error] Img size is under 50KB or cannot download image 'tx_KS92-18+LL92-18_1'
+[2024-05-08 03:04:53][Event] Product 'Aprilia Dorsoduro 750 / Dorsoduro 900 Adjustable Kickstand Lowering Link' information crawling completed
+[2024-05-08 03:04:55][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-900-combo1-p/n92-18-900combo1.htm* page
+[2024-05-08 03:04:55][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_1' download completed
+[2024-05-08 03:04:56][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_2' download completed
+[2024-05-08 03:04:56][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_3' download completed
+[2024-05-08 03:04:56][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_4' download completed
+[2024-05-08 03:04:56][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_5' download completed
+[2024-05-08 03:04:57][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_6' download completed
+[2024-05-08 03:04:57][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_7' download completed
+[2024-05-08 03:04:57][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F_8' download completed
+[2024-05-08 03:05:20][Event] Product '2018 - 2019 Aprilia Dorsoduro 900 Frame Sliders, Axle Sliders, Case Covers' information crawling completed
+[2024-05-08 03:05:23][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-Shiver-750-Combo-p/n92-18-750combo.htm* page
+[2024-05-08 03:05:24][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_1' download completed
+[2024-05-08 03:05:24][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_2' download completed
+[2024-05-08 03:05:25][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_3' download completed
+[2024-05-08 03:05:25][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_4' download completed
+[2024-05-08 03:05:26][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_5' download completed
+[2024-05-08 03:05:27][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_6' download completed
+[2024-05-08 03:05:27][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_7' download completed
+[2024-05-08 03:05:28][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_8' download completed
+[2024-05-08 03:05:28][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_9' download completed
+[2024-05-08 03:05:29][Debug] Image 'tx_N92-18-750+N92-18C+N90-12R+N80F_10' download completed
+[2024-05-08 03:05:52][Event] Product '2013 - 2017 Aprilia Dorsoduro 750 / Shiver 750 Frame Sliders, Axle Sliders, Case Covers' information crawling completed
+[2024-05-08 03:05:55][Debug] Get *https://www.t-rex-racing.com/Dorsoduro-900-combo2-p/n92-18-900combo2.htm* page
+[2024-05-08 03:05:55][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_1' download completed
+[2024-05-08 03:05:56][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_2' download completed
+[2024-05-08 03:05:56][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_3' download completed
+[2024-05-08 03:05:56][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_4' download completed
+[2024-05-08 03:05:57][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_5' download completed
+[2024-05-08 03:05:57][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_6' download completed
+[2024-05-08 03:05:57][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_7' download completed
+[2024-05-08 03:05:58][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_8' download completed
+[2024-05-08 03:05:58][Debug] Image 'tx_N92-18-900+N92-18C+N90-12R+N80F+N92-18FE_9' download completed
+[2024-05-08 03:06:21][Event] Product '2018 - 2019 Aprilia Dorsoduro 900 Frame Front Rear Axle Sliders Engine Case Covers Fender Eliminator' information crawling completed
+[2024-05-08 03:06:21][Event] Current maker : Aprilia, model : Mana 850, year : 2008 - 2015
+[2024-05-08 03:06:23][Debug] Get *https://www.t-rex-racing.com/category-s/955.htm?searching=Y&sort=13&cat=955.&show=300&page=1* page
+[2024-05-08 03:06:28][Debug] Get *https://www.t-rex-racing.com/category-s/955.htm?searching=Y&sort=13&cat=955.&show=300&page=1* page
+[2024-05-08 03:06:40][Debug] Get *https://www.t-rex-racing.com/Aprilia-Front-Axle-Sliders-p/n80f.htm* page
+[2024-05-08 03:06:40][Debug] Image 'tx_N80F_1' download completed
+[2024-05-08 03:06:40][Debug] Image 'tx_N80F_2' download completed
+[2024-05-08 03:06:41][Debug] Image 'tx_N80F_3' download completed
+[2024-05-08 03:06:41][Debug] Image 'tx_N80F_4' download completed
+[2024-05-08 03:06:41][Debug] Image 'tx_N80F_5' download completed
+[2024-05-08 03:06:41][Debug] Image 'tx_N80F_6' download completed
+[2024-05-08 03:06:41][Debug] Image 'tx_N80F_7' download completed
+[2024-05-08 03:06:42][Debug] Image 'tx_N80F_8' download completed
+[2024-05-08 03:06:42][Debug] Image 'tx_N80F_9' download completed
+[2024-05-08 03:06:54][Event] Product 'Aprilia Caponord / Dorsoduro / Mana / RSV1000 / RSV4 / Shiver / Tuono Front Axle Sliders' information crawling completed
+[2024-05-08 03:06:57][Debug] Get *https://www.t-rex-racing.com/Husqvarna-Aprilia-KTM-Rear-Axle-sliders-p/n90-12rearaxlesliders.htm* page
+[2024-05-08 03:06:57][Debug] Image 'tx_N90-12RearAxleSliders_1' download completed
+[2024-05-08 03:06:57][Debug] Image 'tx_N90-12RearAxleSliders_2' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_3' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_4' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_5' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_6' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_7' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_8' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_9' download completed
+[2024-05-08 03:06:58][Debug] Image 'tx_N90-12RearAxleSliders_10' download completed
+[2024-05-08 03:06:59][Debug] Image 'tx_N90-12RearAxleSliders_11' download completed
+[2024-05-08 03:06:59][Debug] Image 'tx_N90-12RearAxleSliders_12' download completed
+[2024-05-08 03:07:11][Event] Product 'Husqvarna Norden 901, KTM 790 / 890 / 1190 / 1290, Aprilia RSV4 / Tuono / Caponord / Dorsoduro / Mana / Shiver Rear Axle Sliders' information crawling completed
+[2024-05-08 03:07:13][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:07:24][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:07:46][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:07:48][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:07:49][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:07:50][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:07:50][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:07:50][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:08:12][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:08:12][Event] Current maker : Aprilia, model : Mana 850 GT ABS, year : 2010
+[2024-05-08 03:08:14][Debug] Get *https://www.t-rex-racing.com/category-s/982.htm?searching=Y&sort=13&cat=982.&show=300&page=1* page
+[2024-05-08 03:08:16][Debug] Get *https://www.t-rex-racing.com/category-s/982.htm?searching=Y&sort=13&cat=982.&show=300&page=1* page
+[2024-05-08 03:08:28][Debug] Get *https://www.t-rex-racing.com/Husqvarna-Aprilia-KTM-Rear-Axle-sliders-p/n90-12rearaxlesliders.htm* page
+[2024-05-08 03:08:28][Debug] Image 'tx_N90-12RearAxleSliders_1' download completed
+[2024-05-08 03:08:29][Debug] Image 'tx_N90-12RearAxleSliders_2' download completed
+[2024-05-08 03:08:29][Debug] Image 'tx_N90-12RearAxleSliders_3' download completed
+[2024-05-08 03:08:29][Debug] Image 'tx_N90-12RearAxleSliders_4' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_5' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_6' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_7' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_8' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_9' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_10' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_11' download completed
+[2024-05-08 03:08:30][Debug] Image 'tx_N90-12RearAxleSliders_12' download completed
+[2024-05-08 03:08:43][Event] Product 'Husqvarna Norden 901, KTM 790 / 890 / 1190 / 1290, Aprilia RSV4 / Tuono / Caponord / Dorsoduro / Mana / Shiver Rear Axle Sliders' information crawling completed
+[2024-05-08 03:08:44][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:08:55][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:09:17][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:09:20][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:09:20][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:09:20][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:09:20][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:09:20][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:09:20][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:09:20][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:09:21][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:09:21][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:09:21][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:09:21][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:09:21][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:09:21][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:09:44][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:09:44][Event] Current maker : Aprilia, model : RS 125, year : 2009 - 2010
+[2024-05-08 03:09:45][Debug] Get *https://www.t-rex-racing.com/category-s/983.htm?searching=Y&sort=13&cat=983.&show=300&page=1* page
+[2024-05-08 03:09:46][Debug] Get *https://www.t-rex-racing.com/category-s/983.htm?searching=Y&sort=13&cat=983.&show=300&page=1* page
+[2024-05-08 03:10:01][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:10:11][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:10:34][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:10:36][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:10:36][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:10:36][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:10:36][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:10:37][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:11:00][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:11:00][Event] Current maker : Aprilia, model : RST Futura, year : 2001 - 2005
+[2024-05-08 03:11:01][Debug] Get *https://www.t-rex-racing.com/category-s/1321.htm?searching=Y&sort=13&cat=1321&show=300&page=1* page
+[2024-05-08 03:11:03][Debug] Get *https://www.t-rex-racing.com/category-s/1321.htm?searching=Y&sort=13&cat=1321&show=300&page=1* page
+[2024-05-08 03:11:14][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:11:25][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:11:47][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:11:49][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:11:50][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:11:50][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:11:50][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:11:50][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:11:50][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:11:50][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:11:51][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:11:51][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:11:51][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:11:51][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:11:51][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:11:51][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:12:14][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:12:14][Event] Current maker : Aprilia, model : RSV Mille, year : 1999 - 2005
+[2024-05-08 03:12:18][Debug] Get *https://www.t-rex-racing.com/category-s/1322.htm?searching=Y&sort=13&cat=1322&show=300&page=1* page
+[2024-05-08 03:12:20][Debug] Get *https://www.t-rex-racing.com/category-s/1322.htm?searching=Y&sort=13&cat=1322&show=300&page=1* page
+[2024-05-08 03:12:32][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:12:42][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:13:05][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:13:06][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:13:07][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:13:08][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:13:08][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:13:08][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:13:30][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:13:30][Event] Current maker : Aprilia, model : RSV Mille R, year : 1999 - 2005
+[2024-05-08 03:13:32][Debug] Get *https://www.t-rex-racing.com/category-s/1323.htm?searching=Y&sort=13&cat=1323&show=300&page=1* page
+[2024-05-08 03:13:34][Debug] Get *https://www.t-rex-racing.com/category-s/1323.htm?searching=Y&sort=13&cat=1323&show=300&page=1* page
+[2024-05-08 03:13:49][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:13:59][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:14:22][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:14:23][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:14:24][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:14:24][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:14:24][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:14:24][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:14:24][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:14:24][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:14:24][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:14:25][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:14:25][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:14:25][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:14:25][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:14:25][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:14:47][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:14:47][Event] Current maker : Aprilia, model : RSV Mille R Factory, year : 2004
+[2024-05-08 03:14:48][Debug] Get *https://www.t-rex-racing.com/category-s/1324.htm?searching=Y&sort=13&cat=1324&show=300&page=1* page
+[2024-05-08 03:14:50][Debug] Get *https://www.t-rex-racing.com/category-s/1324.htm?searching=Y&sort=13&cat=1324&show=300&page=1* page
+[2024-05-08 03:15:02][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:15:12][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:15:35][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:15:36][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:15:37][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:15:38][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:15:38][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:15:38][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:15:38][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:16:00][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:16:00][Event] Current maker : Aprilia, model : RSV Mille R Nera, year : 2004
+[2024-05-08 03:16:02][Debug] Get *https://www.t-rex-racing.com/category-s/1325.htm?searching=Y&sort=13&cat=1325&show=300&page=1* page
+[2024-05-08 03:16:04][Debug] Get *https://www.t-rex-racing.com/category-s/1325.htm?searching=Y&sort=13&cat=1325&show=300&page=1* page
+[2024-05-08 03:16:15][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:16:26][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:16:48][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:16:50][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:16:50][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:16:50][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:16:51][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:16:52][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:17:14][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:17:14][Event] Current maker : Aprilia, model : RSV Mille SP, year : 1999 - 2000
+[2024-05-08 03:17:16][Debug] Get *https://www.t-rex-racing.com/category-s/1326.htm?searching=Y&sort=13&cat=1326&show=300&page=1* page
+[2024-05-08 03:17:18][Debug] Get *https://www.t-rex-racing.com/category-s/1326.htm?searching=Y&sort=13&cat=1326&show=300&page=1* page
+[2024-05-08 03:17:33][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:17:43][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:18:06][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:18:08][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:18:08][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:18:09][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:18:09][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:18:09][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:18:09][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:18:09][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:18:09][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:18:09][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:18:10][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:18:10][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:18:10][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:18:10][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:18:32][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:18:32][Event] Current maker : Aprilia, model : RSV Tuono Factory, year : 2003 - 2005
+[2024-05-08 03:18:33][Debug] Get *https://www.t-rex-racing.com/category-s/1328.htm?searching=Y&sort=13&cat=1328&show=300&page=1* page
+[2024-05-08 03:18:35][Debug] Get *https://www.t-rex-racing.com/category-s/1328.htm?searching=Y&sort=13&cat=1328&show=300&page=1* page
+[2024-05-08 03:18:47][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:18:57][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:19:20][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:19:22][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:19:22][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:19:22][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:19:22][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:19:22][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:19:22][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:19:23][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:19:23][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:19:23][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:19:23][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:19:23][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:19:23][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:19:23][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:19:46][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:19:46][Event] Current maker : Aprilia, model : RSV1000, year : 2006-2009
+[2024-05-08 03:19:48][Debug] Get *https://www.t-rex-racing.com/category-s/1329.htm?searching=Y&sort=13&cat=1329&show=300&page=1* page
+[2024-05-08 03:19:49][Debug] Get *https://www.t-rex-racing.com/category-s/1329.htm?searching=Y&sort=13&cat=1329&show=300&page=1* page
+[2024-05-08 03:20:02][Debug] Get *https://www.t-rex-racing.com/848-Hypermotard-Hyperstrada-Monster-Rear-Sliders-p/n80rb3.htm* page
+[2024-05-08 03:20:02][Debug] Image 'tx_N80RB3Black_1' download completed
+[2024-05-08 03:20:02][Debug] Image 'tx_N80RB3Black_2' download completed
+[2024-05-08 03:20:03][Debug] Image 'tx_N80RB3Black_3' download completed
+[2024-05-08 03:20:16][Event] Product 'Ducati 848 / Hypermotard / Hyperstrada / Monster Rear Axle Sliders' information crawling completed
+[2024-05-08 03:20:18][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV1000-Tuono-1000-Not-Cut-Frame-Sliders-p/n90-4.htm* page
+[2024-05-08 03:20:28][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:28][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:28][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:28][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:28][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:28][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:29][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:29][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:29][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:29][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:29][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:20:29][Error] Img size is under 50KB or cannot download image 'tx_N90-4_1'
+[2024-05-08 03:20:52][Event] Product '2004 - 2009 Aprilia RSV1000 / Tuono 1000 Not Cut Frame Sliders' information crawling completed
+[2024-05-08 03:20:55][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV4-Tuono-V4-No-Cut-Frame-Sliders-Pucks-p/n90-13replacementpucks.htm* page
+[2024-05-08 03:20:55][Debug] Image 'tx_N90-13ReplacementPucks_1' download completed
+[2024-05-08 03:21:09][Event] Product 'Aprilia RSV4 / Tuono V4 Frame Sliders Replacement Pucks w/ Aluminum Inserts' information crawling completed
+[2024-05-08 03:21:10][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:21:21][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:21:43][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:21:45][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV1000-Tuono-1000-Cut-Frame-Sliders-p/n90-4c.htm* page
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:56][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:57][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:21:57][Error] Img size is under 50KB or cannot download image 'tx_N90-4C_1'
+[2024-05-08 03:22:20][Event] Product '2006 - 2009 Aprilia RSV1000 / Tuono 1000 Cut Frame Sliders' information crawling completed
+[2024-05-08 03:22:23][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV4-Tuono-V4-No-Cut-Frame-Sliders-p/n90-13.htm* page
+[2024-05-08 03:22:24][Debug] Image 'tx_N90-13_1' download completed
+[2024-05-08 03:22:25][Debug] Image 'tx_N90-13_2' download completed
+[2024-05-08 03:22:25][Debug] Image 'tx_N90-13_3' download completed
+[2024-05-08 03:22:26][Debug] Image 'tx_N90-13_4' download completed
+[2024-05-08 03:22:26][Debug] Image 'tx_N90-13_5' download completed
+[2024-05-08 03:22:26][Debug] Image 'tx_N90-13_6' download completed
+[2024-05-08 03:22:26][Debug] Image 'tx_N90-13_7' download completed
+[2024-05-08 03:22:26][Debug] Image 'tx_N90-13_8' download completed
+[2024-05-08 03:22:27][Debug] Image 'tx_N90-13_9' download completed
+[2024-05-08 03:22:27][Debug] Image 'tx_N90-13_10' download completed
+[2024-05-08 03:22:28][Debug] Image 'tx_N90-13_11' download completed
+[2024-05-08 03:22:28][Debug] Image 'tx_N90-13_12' download completed
+[2024-05-08 03:22:42][Event] Product 'Aprilia RSV4 / Tuono V4 No Cut Frame Sliders w/ Aluminum Inserts' information crawling completed
+[2024-05-08 03:22:43][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:22:44][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:22:44][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:22:44][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:22:44][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:22:44][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:22:44][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:22:44][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:22:45][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:22:45][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:22:45][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:22:45][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:22:45][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:23:08][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:23:08][Event] Current maker : Aprilia, model : RSV1000R, year : 2004 - 2009
+[2024-05-08 03:23:09][Debug] Get *https://www.t-rex-racing.com/category-s/1330.htm?searching=Y&sort=13&cat=1330&show=300&page=1* page
+[2024-05-08 03:23:11][Debug] Get *https://www.t-rex-racing.com/category-s/1330.htm?searching=Y&sort=13&cat=1330&show=300&page=1* page
+[2024-05-08 03:23:23][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV1000-Tuono-1000-Not-Cut-Frame-Sliders-p/n90-4.htm* page
+[2024-05-08 03:23:33][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:33][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:33][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:33][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:33][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:34][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:34][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:34][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:34][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:34][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:34][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:23:34][Error] Img size is under 50KB or cannot download image 'tx_N90-4_1'
+[2024-05-08 03:23:56][Event] Product '2004 - 2009 Aprilia RSV1000 / Tuono 1000 Not Cut Frame Sliders' information crawling completed
+[2024-05-08 03:23:58][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:24:08][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:24:31][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:24:32][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV1000-Tuono-1000-Cut-Frame-Sliders-p/n90-4c.htm* page
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:24:43][Error] Img size is under 50KB or cannot download image 'tx_N90-4C_1'
+[2024-05-08 03:25:05][Event] Product '2006 - 2009 Aprilia RSV1000 / Tuono 1000 Cut Frame Sliders' information crawling completed
+[2024-05-08 03:25:08][Debug] Get *https://www.t-rex-racing.com/Black-Rear-Motorcycle-Stand-One-Handle-p/blackrearstand.htm* page
+[2024-05-08 03:25:08][Debug] Image 'tx_BlackVRearstand_1' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_2' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_3' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_4' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_5' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_6' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_7' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_8' download completed
+[2024-05-08 03:25:09][Debug] Image 'tx_BlackVRearstand_9' download completed
+[2024-05-08 03:25:10][Debug] Image 'tx_BlackVRearstand_10' download completed
+[2024-05-08 03:25:10][Debug] Image 'tx_BlackVRearstand_11' download completed
+[2024-05-08 03:25:10][Debug] Image 'tx_BlackVRearstand_12' download completed
+[2024-05-08 03:25:32][Event] Product 'Black Rear Motorcycle Stand - One Handle' information crawling completed
+[2024-05-08 03:25:32][Event] Current maker : Aprilia, model : RSV1000R Factory, year : 2004 - 2009
+[2024-05-08 03:25:33][Debug] Get *https://www.t-rex-racing.com/category-s/1331.htm?searching=Y&sort=13&cat=1331&show=300&page=1* page
+[2024-05-08 03:25:35][Debug] Get *https://www.t-rex-racing.com/category-s/1331.htm?searching=Y&sort=13&cat=1331&show=300&page=1* page
+[2024-05-08 03:25:47][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV1000-Tuono-1000-Not-Cut-Frame-Sliders-p/n90-4.htm* page
+[2024-05-08 03:25:57][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:57][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:57][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:57][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:57][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:57][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:58][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:58][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:58][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:58][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:58][Debug] Image 'tx_N90-4_1' download failed
+[2024-05-08 03:25:58][Error] Img size is under 50KB or cannot download image 'tx_N90-4_1'
+[2024-05-08 03:26:20][Event] Product '2004 - 2009 Aprilia RSV1000 / Tuono 1000 Not Cut Frame Sliders' information crawling completed
+[2024-05-08 03:26:22][Debug] Get *https://www.t-rex-racing.com/Black-Front-V-Stand-p/blackvfrontstand.htm* page
+[2024-05-08 03:26:32][Debug] Image 'tx_BlackVFrontStand_1' download completed
+[2024-05-08 03:26:55][Event] Product 'Black Front Motorcycle Stand V' information crawling completed
+[2024-05-08 03:26:57][Debug] Get *https://www.t-rex-racing.com/Aprilia-RSV1000-Tuono-1000-Cut-Frame-Sliders-p/n90-4c.htm* page
+[2024-05-08 03:27:07][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Debug] Image 'tx_N90-4C_1' download failed
+[2024-05-08 03:27:08][Error] Img size is under 50KB or cannot download image 'tx_N90-4C_1'

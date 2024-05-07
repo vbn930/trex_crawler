@@ -210,7 +210,7 @@ class TREX_Crawler:
         item_code = item_code.replace("/", "-")
 
         item_name = self.driver.find_element(By.CLASS_NAME, 'vp-product-title').text
-        org_price = self.driver.find_element(By.CLASS_NAME, 'product_productprice').text.split(":")
+        org_price = self.driver.find_element(By.CLASS_NAME, 'text.colors_text').text.split(":")
         org_price = org_price[1][2:]
         dealer_price = ""
 
