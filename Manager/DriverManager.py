@@ -49,13 +49,15 @@ class WebDriverManager:
             self.driver.set_page_load_timeout(10)
         else:
             chrome_options = Options()
-            user_agent = "Mozilla/5.0 (Linux; Android 9; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.83 Mobile Safari/537.36"
+            user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
             chrome_options.add_argument('user-agent=' + user_agent)
             chrome_options.add_argument('--disable-dev-shm-usage')
             chrome_options.add_argument("--disable-notifications")
             chrome_options.add_argument("--disable-blink-features=AnimationControlled")
             chrome_options.add_argument('--start-maximized')
             chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            chrome_options.add_argument('--log-level=3') # 브라우저 로그 레벨을 낮춤
+            chrome_options.add_argument('--disable-loging') # 로그를 남기지 않음
             if self.is_headless:
                 chrome_options.add_argument("headless")
             driver = webdriver.Chrome(options=chrome_options)
@@ -87,15 +89,12 @@ class WebDriverManager:
         while(is_page_loaded == False):
             try:
                 self.driver.get(url)
-                Util.wait_time(self.logger, 5)
                 self.driver.implicitly_wait(max_wait_time)
                 self.logger.log(log_level="Debug", log_msg=f"Get *{url}* page")
-                self.driver.get_screenshot_as_file("temp.png")
                 is_page_loaded = True
             except Exception as e:
                 self.logger.log(log_level="Debug", log_msg=f"Page load failed : {e}")
                 is_page_loaded = False
-            self.driver.minimize_window()
 
     def get_driver(self):
         return self.driver

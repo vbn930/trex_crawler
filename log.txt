@@ -1,0 +1,15 @@
+[2024-05-08 01:27:54][Debug] Driver init
+[2024-05-08 01:27:56][Event] =TREX Crawler ver1.2=
+[2024-05-08 01:27:56][Event] Current settings 'ID : bikeonline.korea@gmail.com, PW : piston7759!, Start maker : BMW, Start model : K1600GT, K1600GTL, Start year : 2011 - On'
+[2024-05-08 01:27:58][Debug] Get *https://www.t-rex-racing.com/login.asp* page
+[2024-05-08 01:27:58][Debug] Wait 2 secs
+[2024-05-08 01:28:00][Debug] Wait 2 secs
+[2024-05-08 01:28:04][Debug] Wait 5 secs
+[2024-05-08 01:28:09][Event] Login succes!
+[2024-05-08 01:28:11][Debug] Get *https://www.t-rex-racing.com/* page
+[2024-05-08 01:28:16][Event] Start point found! : BMW, K1600GT, K1600GTL, 2011 - On
+[2024-05-08 01:28:44][Event] Current maker : BMW, model : K1600GT, K1600GTL, year : 2011 - On
+[2024-05-08 01:28:47][Debug] Get *https://www.t-rex-racing.com/category-s/1392.htm?searching=Y&sort=13&cat=1392&show=300&page=1* page
+[2024-05-08 01:28:48][Debug] Get *https://www.t-rex-racing.com/category-s/1392.htm?searching=Y&sort=13&cat=1392&show=300&page=1* page
+[2024-05-08 01:29:03][Debug] Get *https://www.t-rex-racing.com/2011-2022-BMW-K1600B-GT-GTL-Front-Axle-Sliders-p/n139-11f.htm* page
+[2024-05-08 01:29:03][Error] Error in get_item_info : string index out of range

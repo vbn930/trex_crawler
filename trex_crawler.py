@@ -28,7 +28,9 @@ class Product:
     images: list
     option_name: str
     option_value: str
+    make: str
     model: str
+    year: str
 
 @dataclass
 class ShopCatrgory:
@@ -73,8 +75,16 @@ class TREX_Crawler:
         start_year = data["start_year"].to_list()
         start_year.append(0)
         start_year = start_year[0:start_year.index(0)]
-
-        return account[0], account[1], start_maker[0], start_model[0], start_year[0]
+        
+        if not isinstance(start_year[0], str):
+            if isinstance(start_year[0], int):
+                return account[0], account[1], start_maker[0], start_model[0], str(start_year[0])
+            elif isinstance(start_year[0], float):
+                return account[0], account[1], start_maker[0], start_model[0], str(int(start_year[0]))
+            else:
+                return account[0], account[1], start_maker[0], start_model[0], start_year[0]
+        else:
+            return account[0], account[1], start_maker[0], start_model[0], start_year[0]
 
     def data_init(self):
         self.data.clear()
@@ -88,7 +98,9 @@ class TREX_Crawler:
         self.data["옵션 내용"] = list()
         self.data["설명"] = list()
         self.data["설명 번역"] = list()
-        self.data["모델"] = list()
+        self.data["MAKE"] = list()
+        self.data["MODEL"] = list()
+        self.data["YEAR"] = list()
     
     def add_product_to_data(self, product):
         self.data["상품 코드"].append(product.code)
@@ -110,7 +122,9 @@ class TREX_Crawler:
         self.data["옵션 내용"].append(product.option_value)
         self.data["설명"].append(product.description)
         self.data["설명 번역"].append(product.trans_description)
-        self.data["모델"].append(product.model)
+        self.data["MAKE"].append(product.make)
+        self.data["MODEL"].append(product.model)
+        self.data["YEAR"].append(product.year)
 
     def get_shop_categories(self, start_make, start_model, start_year):
         is_found_start_idx = False
@@ -135,7 +149,6 @@ class TREX_Crawler:
                 year_select = Select(self.driver.find_element(By.ID, 'SelectModel2'))
                 year_options = year_select.options
                 year_options = year_options[2:]
-
                 for year_option in year_options:
                     if start_make == make_option.text and start_model == model_option.text and start_year == year_option.text and is_found_start_idx == False:
                         is_found_start_idx = True
@@ -174,8 +187,8 @@ class TREX_Crawler:
             item_elements = self.driver.find_element(By.XPATH, '//*[@id="MainForm"]/table[2]/tbody/tr/td/table/tbody/tr/td/table').find_elements(By.TAG_NAME, "tr")
             for i in range(0, len(item_elements), 5):
                 #1, 3 인덱스 사용
-                item_href_elements = item_elements[1].find_elements(By.TAG_NAME, "td")
-                item_code_elements = item_elements[3].find_elements(By.TAG_NAME, "td")
+                item_href_elements = item_elements[i+1].find_elements(By.TAG_NAME, "td")
+                item_code_elements = item_elements[i+3].find_elements(By.TAG_NAME, "td")
                 
                 for i in range(len(item_href_elements)):
                     item_href = item_href_elements[i].find_element(By.CLASS_NAME, "productnamecolor.colors_productname").get_attribute("href")
@@ -195,7 +208,6 @@ class TREX_Crawler:
         temp_code = code.replace(" ", "")
         item_code = f"tx_{temp_code}"
         item_code = item_code.replace("/", "-")
-        item_model = f"{shop_catrgory.make} {shop_catrgory.model} {shop_catrgory.year}"
 
         item_name = self.driver.find_element(By.CLASS_NAME, 'vp-product-title').text
         org_price = self.driver.find_element(By.CLASS_NAME, 'product_productprice').text.split(":")
@@ -280,7 +292,8 @@ class TREX_Crawler:
                 item_description += text.replace("\n", "|")
 
         product = Product(code=item_code, name=item_name, price=org_price, dealer_price=dealer_price, description=item_description, 
-                            trans_description=Util.translator(self.logger, "en", "ko", item_description), images=image_names, option_name=option_name, option_value=option_value, model=item_model)
+                            trans_description=Util.translator(self.logger, "en", "ko", item_description), images=image_names, option_name=option_name, option_value=option_value,
+                            make=shop_catrgory.make, model=shop_catrgory.model, year=shop_catrgory.year)
         self.add_product_to_data(product)
         self.save_csv_datas(output_name=output_name)
 
@@ -340,7 +353,6 @@ class TREX_Crawler:
                     return
                 item_hrefs += temp_hrefs
                 item_codes += temp_codes
-
             for i in range(len(item_hrefs)):
                 try:
                     item_info = self.get_item_info(item_hrefs[i], item_codes[i], shop_catrgory, output_name)
